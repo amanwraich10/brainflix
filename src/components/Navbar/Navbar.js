@@ -1,4 +1,4 @@
-import "../components/Navbar.scss";
+import "../../styles/Navbar.scss";
 
 function Navbar() {
 	return (
@@ -6,16 +6,18 @@ function Navbar() {
 			<div className="navbar">
 				<img
 					classname="navbar__logo"
-					src={require("../assets/Logo/BrainFlix-logo.svg")}
+					alt=""
+					src={require("../../assets/Logo/BrainFlix-logo.svg")}
 				/>
-				<h1 className="navbar__heading">Brainflix</h1>
+				<h1 className="navbar__heading">BrainFlix</h1>
 			</div>
 
 			<div className="navbar__search">
 				<input className="navbar__input" placeholder="Search"></input>
 				<img
 					className="navbar__image"
-					src={require("../assets/Images/Mohan-muruge.jpg")}
+					alt=""
+					src={require("../../assets/Images/Mohan-muruge.jpg")}
 				/>
 			</div>
 			<button className="navbar__button">UPLOAD</button>

@@ -1,0 +1,41 @@
+@font-face {
+	font-family: Avenir;
+	src: url("../assets/Font/Alternative\ files/AvenirNextLTPro.ttf");
+}
+
+@font-face {
+	font-family: AvenirBold;
+	src: url("../assets/Font/Alternative\ files/AvenirNextLTProBold.ttf");
+}
+
+hr {
+	border: 1px solid #e1e1e1;
+	margin-left: 28px;
+	margin-right: 28px;
+}
+
+.section {
+	&__heading {
+		font-family: AvenirBold;
+		color: #323232;
+		font-size: 48px;
+		letter-spacing: 1px;
+		margin-left: 34px;
+	}
+
+	&__writer {
+		color: #323232;
+		font-size: 25px;
+		font-family: AvenirBold;
+		margin-left: 35px;
+	}
+
+	&__highlight {
+		font-size: 22px;
+		color: #323232;
+		margin-left: 28px;
+		margin-right: 28px;
+		line-height: 30px;
+		letter-spacing: 0.5px;
+	}
+}
