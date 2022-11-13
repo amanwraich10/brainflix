@@ -1,0 +1,52 @@
+@font-face {
+	font-family: Avenir;
+	src: url(../../assets/Font/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+	font-family: AvenirBold;
+	src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+}
+
+hr {
+	border: 1px solid #e1e1e1;
+	margin-left: 28px;
+	margin-right: 28px;
+}
+
+.section {
+	&__heading {
+		font-family: Avenir;
+		color: #323232;
+		font-size: 40px;
+		letter-spacing: 1px;
+		margin-left: 25px;
+	}
+	&-info__top {
+		display: flex;
+		justify-content: space-around;
+		gap: 200px;
+	}
+
+	&-info__bottom {
+		display: flex;
+		justify-content: space-around;
+		gap: 300px;
+	}
+
+	&__channel {
+		color: #323232;
+		font-size: 18px;
+		font-family: Avenir;
+		// margin-left: 25px;
+	}
+
+	&__description {
+		font-size: 18px;
+		color: #323232;
+		margin-left: 28px;
+		margin-right: 28px;
+		line-height: 25px;
+		letter-spacing: 0.5px;
+	}
+}

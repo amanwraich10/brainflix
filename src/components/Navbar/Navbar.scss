@@ -1,0 +1,88 @@
+@font-face {
+	font-family: Avenir;
+	src: url(../../assets/Font/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+	font-family: AvenirBold;
+	src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+}
+
+body {
+	font-family: Avenir;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+
+	&__logo {
+		background-image: url(../../assets/Logo/BrainFlix-logo.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 30px;
+		width: 130px;
+		margin-bottom: 5px;
+	}
+
+	&__heading {
+		font-size: 1.875rem;
+		font-family: Avenir;
+		letter-spacing: 0.0625rem;
+	}
+
+	&__input {
+		// ADD Placeholder color
+		font-size: 1.375rem;
+		font-family: Avenir;
+		border-radius: 0.4375rem;
+		border: 0.125rem solid #e1e1e1;
+		width: 60%;
+		height: 60px;
+		margin-right: 15px;
+		margin-top: 0px;
+		background-image: url(../../assets//Icons/search.svg);
+		background-repeat: no-repeat;
+		background-size: 5vw;
+		background-position-x: 3.5vw;
+		background-position-y: center;
+
+		padding-left: 4rem;
+	}
+	// & ::placeholder {
+	// 	color: green;
+	// }
+
+	&__image {
+		background-image: url(../../assets/Images/Mohan-muruge.jpg);
+		background-size: cover;
+		border-radius: 50%;
+		width: 4rem;
+		height: 4rem;
+	}
+	&__search {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__button {
+		color: white;
+		font-family: AvenirBold;
+		font-size: 1.375rem;
+		width: 89%;
+		background-color: #0095ff;
+		border-radius: 0.4375rem;
+		padding: 1rem;
+		border: 0.125rem solid #0095ff;
+		margin-top: 1rem;
+		margin-bottom: 1.9rem;
+		margin-left: 1.6rem;
+		background-image: url(../../assets/Icons/upload.svg);
+		background-repeat: no-repeat;
+		background-size: 7.5vw;
+		background-position-x: 3.5vw;
+		background-position-y: center;
+	}
+}

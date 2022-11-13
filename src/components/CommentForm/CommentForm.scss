@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Avenir;
+	src: url(../../assets/Font/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+	font-family: AvenirBold;
+	src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+}
+
+.Comments {
+	&__total {
+		color: #323232;
+		margin-left: 28px;
+		font-family: Avenir;
+		font-size: 18px;
+	}
+
+	&__heading {
+		color: #afafaf;
+		font-family: Avenir;
+		font-size: 15px;
+		margin-left: 97px;
+		margin-bottom: 8px;
+	}
+
+	&__image {
+		border-radius: 50%;
+		width: 3rem;
+		height: 3rem;
+		margin-left: 28px;
+		background-image: url(../../assets/Images/Mohan-muruge.jpg);
+		background-size: cover;
+	}
+
+	&__input {
+		// CHANGE FONT POSITION
+		font-size: 17px;
+		display: flex;
+		// height: 120px;
+		width: 340px;
+		border-radius: 6px;
+		border: 1.5px solid #e1e1e1;
+		margin-bottom: 20px;
+		background-color: #fafafa;
+		padding-bottom: 100px;
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+	&__comment {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__button {
+		color: white;
+		font-size: 17px;
+		height: 50px;
+		width: 350px;
+		border-radius: 6px;
+		border: 1.5px solid #0095ff;
+		background-color: #0095ff;
+		background-image: url(../../assets/Icons/add_comment.svg);
+		background-repeat: no-repeat;
+		background-size: 5vw;
+		background-position-x: 2.5vw;
+		background-position-y: 0.8rem;
+	}
+}
