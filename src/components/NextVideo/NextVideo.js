@@ -1,3 +1,5 @@
+import "../NextVideo/NextVideo.scss";
+
 function NextVideo(props) {
 	console.log(props);
 	const clickHandler = (event) => {
@@ -5,13 +7,21 @@ function NextVideo(props) {
 	};
 	return (
 		<div>
-			<p>Next Videos</p>
+			<p className="nextvideo__heading">NEXT VIDEOS</p>
 			{props.nv.map((video) => {
 				return (
-					<div key={video.id} onClick={clickHandler}>
-						<img src={video.image} />
-						<p>{video.title}</p>
-						<p>{video.channel}</p>
+					<div
+						key={video.id}
+						onClick={clickHandler}
+						className="nextvideo__section"
+					>
+						<img src={video.image} className="nextvideo__video" />
+						<div>
+							<p className="nextvideo__title">{video.title}</p>
+							<p className="nextvideo__channel">
+								{video.channel}
+							</p>
+						</div>
 					</div>
 				);
 			})}

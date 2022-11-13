@@ -1,0 +1,35 @@
+.comment {
+	&__list {
+		display: flex;
+		// justify-content: space-between;
+		gap: 30px;
+	}
+
+	&__image {
+		background-color: green;
+		border-radius: 50%;
+		width: 9rem;
+		height: 3rem;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	&__writer {
+		display: flex;
+		justify-content: space-between;
+
+		// width: 40%;
+	}
+
+	&__name {
+		font-family: AvenirBold;
+	}
+
+	&__time {
+		color: #a1a1a1;
+		margin-right: 20px;
+	}
+
+	&__comment {
+		margin-top: 0px;
+	}
+}
