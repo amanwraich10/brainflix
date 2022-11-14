@@ -16,7 +16,7 @@ function NextVideo(props) {
 						className="nextvideo__section"
 					>
 						<img src={video.image} className="nextvideo__video" />
-						<div>
+						<div className="nextvideo__info">
 							<p className="nextvideo__title">{video.title}</p>
 							<p className="nextvideo__channel">
 								{video.channel}

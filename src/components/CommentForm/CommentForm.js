@@ -9,7 +9,6 @@ function Comments() {
 		<div>
 			<h2 className="Comments__total">3 Comments</h2>
 			<h3 className="Comments__heading">JOIN THE CONVERSATION</h3>
-
 			<div className="Comments__comment">
 				<div className="Comments__image" />
 
@@ -21,8 +20,7 @@ function Comments() {
 					<button className="Comments__button">COMMENT</button>
 				</form>
 			</div>
-
-			<hr />
+			<hr className="Comments__linebreak" />
 		</div>
 	);
 }

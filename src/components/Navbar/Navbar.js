@@ -8,20 +8,20 @@ function Navbar() {
 	return (
 		<>
 			<div className="navbar">
-				<h1 className="navbar__logo"></h1>
-			</div>
+				<div className="navbar__logo"></div>
 
-			<form onClick={buttonHandler}>
-				<div className="navbar__search">
-					<input
-						className="navbar__input"
-						type="text"
-						placeholder="Search"
-					></input>
-					<p className="navbar__image" />
-				</div>
-				<button className="navbar__button">UPLOAD</button>
-			</form>
+				<form onClick={buttonHandler} className="navabr__form">
+					<div className="navbar__search">
+						<input
+							className="navbar__input"
+							type="text"
+							placeholder="Search"
+						></input>
+						<div className="navbar__image" />
+					</div>
+					<button className="navbar__button">UPLOAD</button>
+				</form>
+			</div>
 		</>
 	);
 }
