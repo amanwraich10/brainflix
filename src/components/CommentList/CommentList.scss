@@ -3,7 +3,7 @@
 	@include mobile {
 		&__list {
 			display: flex;
-			gap: 30px;
+			gap: 1.875rem;
 		}
 
 		&__image {
@@ -11,8 +11,8 @@
 			border-radius: 50%;
 			width: 16rem;
 			height: 4rem;
-			margin-left: 28px;
-			margin-top: 20px;
+			margin-left: 1.75rem;
+			margin-top: 1.25rem;
 		}
 
 		&__writer {
@@ -23,64 +23,64 @@
 
 		&__name {
 			font-family: AvenirBold;
-			font-size: 23px;
+			font-size: 1.4375rem;
 		}
 
 		&__time {
 			color: $Silver;
-			margin-right: 28px;
+			margin-right: 1.75rem;
 			font-family: Avenir;
-			font-size: 23px;
+			font-size: 1.4375rem;
 		}
 
 		&__comment {
-			margin-top: 0px;
+			margin-top: 0rem;
 			font-family: Avenir;
-			font-size: 23px;
-			line-height: 32px;
-			margin-right: 28px;
+			font-size: 1.4375rem;
+			line-height: 2rem;
+			margin-right: 1.75rem;
 		}
 
 		&__linebreak {
-			margin-left: 28px;
-			margin-right: 28px;
-			margin-top: 0px;
-			margin-bottom: 0px;
-			border: 1px solid $Mercury;
+			margin-left: 1.75rem;
+			margin-right: 1.75rem;
+			margin-top: 0rem;
+			margin-bottom: 0rem;
+			border: 0.0625rem solid $Mercury;
 		}
 	}
 
 	@include tablet {
 		&__list {
-			gap: 30px;
+			gap: 1.875rem;
 		}
 
 		&__image {
 			width: 5.5rem;
 			height: 3.3rem;
-			margin-left: 48px;
+			margin-left: 3rem;
 		}
 
 		&__name {
-			font-size: 18px;
+			font-size: 1.125rem;
 		}
 
 		&__time {
-			margin-right: 48px;
-			font-size: 18px;
+			margin-right: 3rem;
+			font-size: 1.125rem;
 		}
 		&__comment {
-			margin-right: 48px;
-			font-size: 18px;
-			letter-spacing: 0.5px;
-			line-height: 25px;
+			margin-right: 3rem;
+			font-size: 1.125rem;
+			letter-spacing: 0.0313rem;
+			line-height: 1.5625rem;
 		}
 
 		&__linebreak {
-			margin-left: 48px;
-			margin-right: 48px;
-			margin-top: 10px;
-			border: 0.6px solid $Mercury;
+			margin-left: 3rem;
+			margin-right: 3rem;
+			margin-top: 0.625rem;
+			border: 0.0375rem solid $Mercury;
 		}
 	}
 
@@ -88,32 +88,32 @@
 		&__image {
 			width: 2.7rem;
 			height: 2.6rem;
-			margin-left: 152.5px;
+			margin-left: 9.5313rem;
 		}
 		&__comment {
-			margin-left: 10px;
-			font-size: 15px;
-			width: 595px;
-			letter-spacing: 0.2px;
+			margin-left: 0.625rem;
+			font-size: 0.9375rem;
+			width: 37.1875rem;
+			letter-spacing: 0.0125rem;
 		}
 
 		&__time {
-			margin-right: 28px;
-			font-size: 15px;
+			margin-right: 1.75rem;
+			font-size: 0.9375rem;
 		}
 
 		&__name {
-			margin-bottom: 0px;
-			margin-top: 25px;
-			font-size: 14.5px;
-			margin-left: 10px;
+			margin-bottom: 0rem;
+			margin-top: 1.5625rem;
+			font-size: 0.9063rem;
+			margin-left: 0.625rem;
 		}
 
 		&__linebreak {
-			margin-left: 140px;
-			margin-right: 0px;
-			margin-top: 0px;
-			margin-bottom: 0px;
+			margin-left: 8.75rem;
+			margin-right: 0rem;
+			margin-top: 0rem;
+			margin-bottom: 0rem;
 		}
 	}
 }
