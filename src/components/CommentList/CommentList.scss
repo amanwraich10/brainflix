@@ -1,35 +1,119 @@
+@import "../../App.scss";
 .comment {
-	&__list {
-		display: flex;
-		// justify-content: space-between;
-		gap: 30px;
+	@include mobile {
+		&__list {
+			display: flex;
+			gap: 30px;
+		}
+
+		&__image {
+			background-color: $Mercury;
+			border-radius: 50%;
+			width: 16rem;
+			height: 4rem;
+			margin-left: 28px;
+			margin-top: 20px;
+		}
+
+		&__writer {
+			display: flex;
+			justify-content: space-between;
+			color: $BrainFlix-Black;
+		}
+
+		&__name {
+			font-family: AvenirBold;
+			font-size: 23px;
+		}
+
+		&__time {
+			color: $Silver;
+			margin-right: 28px;
+			font-family: Avenir;
+			font-size: 23px;
+		}
+
+		&__comment {
+			margin-top: 0px;
+			font-family: Avenir;
+			font-size: 23px;
+			line-height: 32px;
+			margin-right: 28px;
+		}
+
+		&__linebreak {
+			margin-left: 28px;
+			margin-right: 28px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			border: 1px solid $Mercury;
+		}
 	}
 
-	&__image {
-		background-color: green;
-		border-radius: 50%;
-		width: 9rem;
-		height: 3rem;
-		margin-left: 20px;
-		margin-top: 20px;
-	}
-	&__writer {
-		display: flex;
-		justify-content: space-between;
+	@include tablet {
+		&__list {
+			gap: 30px;
+		}
 
-		// width: 40%;
+		&__image {
+			width: 5.5rem;
+			height: 3.3rem;
+			margin-left: 48px;
+		}
+
+		&__name {
+			font-size: 18px;
+		}
+
+		&__time {
+			margin-right: 48px;
+			font-size: 18px;
+		}
+		&__comment {
+			margin-right: 48px;
+			font-size: 18px;
+			letter-spacing: 0.5px;
+			line-height: 25px;
+		}
+
+		&__linebreak {
+			margin-left: 48px;
+			margin-right: 48px;
+			margin-top: 10px;
+			border: 0.6px solid $Mercury;
+		}
 	}
 
-	&__name {
-		font-family: AvenirBold;
-	}
+	@include desktop {
+		&__image {
+			width: 5.2rem;
+			height: 2.6rem;
+			margin-left: 152.5px;
+		}
+		&__comment {
+			margin-left: 10px;
+			font-size: 15px;
+			width: 95%;
+			letter-spacing: 0.2px;
+		}
 
-	&__time {
-		color: #a1a1a1;
-		margin-right: 20px;
-	}
+		&__time {
+			margin-right: 28px;
+			font-size: 15px;
+		}
 
-	&__comment {
-		margin-top: 0px;
+		&__name {
+			margin-bottom: 0px;
+			margin-top: 25px;
+			font-size: 14.5px;
+			margin-left: 10px;
+		}
+
+		&__linebreak {
+			margin-left: 140px;
+			margin-right: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
 	}
 }

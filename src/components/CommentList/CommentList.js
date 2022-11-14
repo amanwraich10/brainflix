@@ -15,7 +15,7 @@ function CommentList(props) {
 						<p className="comment__comment">{comment.comment}</p>
 					</div>
 				</div>
-				<hr></hr>
+				<hr className="comment__linebreak" />
 			</>
 		);
 	});
