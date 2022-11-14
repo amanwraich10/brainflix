@@ -8,7 +8,7 @@ function Navbar() {
 	return (
 		<>
 			<div className="navbar">
-				<div className="navbar__logo"></div>
+				<a className="navbar__logo" href=""></a>
 
 				<form onClick={buttonHandler} className="navabr__form">
 					<div className="navbar__search">

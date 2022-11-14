@@ -1,13 +1,14 @@
 import "../CommentForm/CommentForm.scss";
 
-function Comments() {
+function Comments(props) {
 	const buttonHandler = (event) => {
 		event.preventDefault();
 		console.log(event.target);
 	};
+
 	return (
 		<div>
-			<h2 className="Comments__total">3 Comments</h2>
+			<h2 className="Comments__total">{props.length} Comments</h2>
 			<h3 className="Comments__heading">JOIN THE CONVERSATION</h3>
 			<div className="Comments__comment">
 				<div className="Comments__image" />

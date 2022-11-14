@@ -1,18 +1,16 @@
 import "../NextVideo/NextVideo.scss";
 
 function NextVideo(props) {
-	console.log(props);
-	const clickHandler = (event) => {
-		console.log(event.target);
-	};
 	return (
 		<div>
 			<p className="nextvideo__heading">NEXT VIDEOS</p>
-			{props.nv.map((video) => {
+			{props.nextVideo.map((video) => {
 				return (
 					<div
 						key={video.id}
-						onClick={clickHandler}
+						onClick={(event) => {
+							props.clickVideo(video);
+						}}
 						className="nextvideo__section"
 					>
 						<img src={video.image} className="nextvideo__video" />
@@ -30,4 +28,3 @@ function NextVideo(props) {
 }
 
 export default NextVideo;
-// onclick={()=>props.handleclickvideo(props.id)}
