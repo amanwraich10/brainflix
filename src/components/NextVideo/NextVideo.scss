@@ -4,26 +4,26 @@
 	@include mobile {
 		&__heading {
 			color: $Silver;
-			margin-left: 28px;
-			font-size: 22px;
+			margin-left: 1.75rem;
+			font-size: 1.375rem;
 			font-family: AvenirBold;
 		}
 
 		&__video {
 			width: 31.5%;
-			height: 95px;
-			border-radius: 7px;
-			margin-bottom: 25px;
-			margin-left: 28px;
-			margin-right: 28px;
+			height: 5.9375rem;
+			border-radius: 0.4375rem;
+			margin-bottom: 1.5625rem;
+			margin-left: 1.75rem;
+			margin-right: 1.75rem;
 			flex-shrink: 0;
 		}
 
 		&__title {
 			font-family: AvenirBold;
-			font-size: 22px;
-			margin-bottom: 10px;
-			margin-top: 0px;
+			font-size: 1.375rem;
+			margin-bottom: 0.625rem;
+			margin-top: 0rem;
 			width: 90%;
 		}
 
@@ -32,35 +32,35 @@
 		}
 
 		&__channel {
-			margin-top: 0px;
+			margin-top: 0rem;
 			font-family: Avenir;
-			font-size: 22px;
+			font-size: 1.375rem;
 		}
 	}
 
 	@include tablet {
 		&__heading {
-			margin-left: 48px;
-			margin-top: 30px;
-			margin-bottom: 28px;
+			margin-left: 3rem;
+			margin-top: 1.875rem;
+			margin-bottom: 1.75rem;
 			font-family: AvenirBold;
-			font-size: 16px;
+			font-size: 1rem;
 		}
 
 		&__video {
 			width: 14.3%;
 			height: 5.2rem;
-			border-radius: 5px;
-			margin-bottom: 30px;
-			margin-left: 49px;
-			margin-right: 23px;
+			border-radius: 0.3125rem;
+			margin-bottom: 1.875rem;
+			margin-left: 3.0625rem;
+			margin-right: 1.4375rem;
 			flex-shrink: 0;
 		}
 
 		&__title {
 			font-family: AvenirBold;
-			margin-bottom: 15px;
-			font-size: 18px;
+			margin-bottom: 0.9375rem;
+			font-size: 1.125rem;
 		}
 
 		&__info {
@@ -72,23 +72,23 @@
 		}
 
 		&__channel {
-			margin-top: 0px;
+			margin-top: 0rem;
 			font-family: Avenir;
-			font-size: 17px;
+			font-size: 1.0625rem;
 		}
 	}
 
 	@include desktop {
 		&__heading {
-			margin-left: 21px;
-			font-size: 14px;
+			margin-left: 1.3125rem;
+			font-size: 0.875rem;
 		}
 
 		&__video {
 			width: 24%;
 			height: 4.5rem;
-			margin-bottom: 25px;
-			margin-left: 21px;
+			margin-bottom: 1.5625rem;
+			margin-left: 1.3125rem;
 		}
 
 		&__info {
@@ -96,13 +96,13 @@
 		}
 
 		&__title {
-			margin-bottom: 8px;
-			margin-top: 3px;
-			font-size: 15px;
+			margin-bottom: 0.5rem;
+			margin-top: 0.1875rem;
+			font-size: 0.9375rem;
 		}
 
 		&__channel {
-			font-size: 15px;
+			font-size: 0.9375rem;
 		}
 	}
 }
