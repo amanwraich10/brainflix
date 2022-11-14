@@ -1,0 +1,108 @@
+@import "../../App.scss";
+
+.nextvideo {
+	@include mobile {
+		&__heading {
+			color: $Silver;
+			margin-left: 1.75rem;
+			font-size: 1.375rem;
+			font-family: AvenirBold;
+		}
+
+		&__video {
+			width: 31.5%;
+			height: 5.9375rem;
+			border-radius: 0.4375rem;
+			margin-bottom: 1.5625rem;
+			margin-left: 1.75rem;
+			margin-right: 1.75rem;
+			flex-shrink: 0;
+		}
+
+		&__title {
+			font-family: AvenirBold;
+			font-size: 1.375rem;
+			margin-bottom: 0.625rem;
+			margin-top: 0rem;
+			width: 90%;
+		}
+
+		&__section {
+			display: flex;
+		}
+
+		&__channel {
+			margin-top: 0rem;
+			font-family: Avenir;
+			font-size: 1.375rem;
+		}
+	}
+
+	@include tablet {
+		&__heading {
+			margin-left: 3rem;
+			margin-top: 1.875rem;
+			margin-bottom: 1.75rem;
+			font-family: AvenirBold;
+			font-size: 1rem;
+		}
+
+		&__video {
+			width: 14.3%;
+			height: 5.2rem;
+			border-radius: 0.3125rem;
+			margin-bottom: 1.875rem;
+			margin-left: 3.0625rem;
+			margin-right: 1.4375rem;
+			flex-shrink: 0;
+		}
+
+		&__title {
+			font-family: AvenirBold;
+			margin-bottom: 0.9375rem;
+			font-size: 1.125rem;
+		}
+
+		&__info {
+			width: 25%;
+		}
+
+		&__section {
+			display: flex;
+		}
+
+		&__channel {
+			margin-top: 0rem;
+			font-family: Avenir;
+			font-size: 1.0625rem;
+		}
+	}
+
+	@include desktop {
+		&__heading {
+			margin-left: 1.3125rem;
+			font-size: 0.875rem;
+		}
+
+		&__video {
+			width: 24%;
+			height: 4.5rem;
+			margin-bottom: 1.5625rem;
+			margin-left: 1.3125rem;
+		}
+
+		&__info {
+			width: 40%;
+		}
+
+		&__title {
+			margin-bottom: 0.5rem;
+			margin-top: 0.1875rem;
+			font-size: 0.9375rem;
+		}
+
+		&__channel {
+			font-size: 0.9375rem;
+		}
+	}
+}

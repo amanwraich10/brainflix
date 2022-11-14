@@ -1,0 +1,119 @@
+@import "../../App.scss";
+.comment {
+	@include mobile {
+		&__list {
+			display: flex;
+			gap: 1.875rem;
+		}
+
+		&__image {
+			background-color: $Mercury;
+			border-radius: 50%;
+			width: 16rem;
+			height: 4rem;
+			margin-left: 1.75rem;
+			margin-top: 1.25rem;
+		}
+
+		&__writer {
+			display: flex;
+			justify-content: space-between;
+			color: $BrainFlix-Black;
+		}
+
+		&__name {
+			font-family: AvenirBold;
+			font-size: 1.4375rem;
+		}
+
+		&__time {
+			color: $Silver;
+			margin-right: 1.75rem;
+			font-family: Avenir;
+			font-size: 1.4375rem;
+		}
+
+		&__comment {
+			margin-top: 0rem;
+			font-family: Avenir;
+			font-size: 1.4375rem;
+			line-height: 2rem;
+			margin-right: 1.75rem;
+		}
+
+		&__linebreak {
+			margin-left: 1.75rem;
+			margin-right: 1.75rem;
+			margin-top: 0rem;
+			margin-bottom: 0rem;
+			border: 0.0625rem solid $Mercury;
+		}
+	}
+
+	@include tablet {
+		&__list {
+			gap: 1.875rem;
+		}
+
+		&__image {
+			width: 5.5rem;
+			height: 3.3rem;
+			margin-left: 3rem;
+		}
+
+		&__name {
+			font-size: 1.125rem;
+		}
+
+		&__time {
+			margin-right: 3rem;
+			font-size: 1.125rem;
+		}
+		&__comment {
+			margin-right: 3rem;
+			font-size: 1.125rem;
+			letter-spacing: 0.0313rem;
+			line-height: 1.5625rem;
+		}
+
+		&__linebreak {
+			margin-left: 3rem;
+			margin-right: 3rem;
+			margin-top: 0.625rem;
+			border: 0.0375rem solid $Mercury;
+		}
+	}
+
+	@include desktop {
+		&__image {
+			width: 2.7rem;
+			height: 2.6rem;
+			margin-left: 9.5313rem;
+		}
+		&__comment {
+			margin-left: 0.625rem;
+			font-size: 0.9375rem;
+			width: 37.1875rem;
+			letter-spacing: 0.0125rem;
+		}
+
+		&__time {
+			margin-right: 1.75rem;
+			font-size: 0.9375rem;
+		}
+
+		&__name {
+			margin-bottom: 0rem;
+			margin-top: 1.5625rem;
+			font-size: 0.9063rem;
+			margin-left: 0.625rem;
+		}
+
+		&__linebreak {
+			margin-left: 8.75rem;
+			margin-right: 0rem;
+			margin-top: 0rem;
+			margin-bottom: 0rem;
+		}
+	}
+}
