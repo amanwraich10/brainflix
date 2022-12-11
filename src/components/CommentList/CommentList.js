@@ -1,7 +1,8 @@
 import "../CommentList/CommentList.scss";
 
 function CommentList(props) {
-	return props.comments.map((comment) => {
+	// console.log(props.commentList?.comments);
+	return props.commentList?.comments.map((comment) => {
 		return (
 			<>
 				<div key={comment.id} className="comment__list">
