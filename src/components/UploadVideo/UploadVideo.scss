@@ -1,0 +1,27 @@
+@import "../../App.scss";
+
+.uploadpage {
+	@include mobile {
+		&__title {
+			font-family: AvenirBold;
+			font-size: 2.5rem;
+			color: $BrainFlix-Black;
+			margin: 37px auto auto 1.75rem;
+		}
+
+		&__sub-title {
+			font-family: AvenirBold;
+			margin-left: 1.75rem;
+			font-size: 1.25rem;
+			color: $Silver;
+			margin: 40px auto 10px 1.75rem;
+		}
+
+		&__image {
+			width: 90%;
+			height: 35.5vh;
+			margin: auto 1.75rem 1.75rem 1.75rem;
+			border-radius: 8px;
+		}
+	}
+}

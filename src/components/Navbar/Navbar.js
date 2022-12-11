@@ -2,9 +2,6 @@ import "../../components/Navbar/Navbar.scss";
 import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
-	const buttonHandler = (event) => {
-		event.preventDefault();
-	};
 	return (
 		<>
 			<div className="navbar">
