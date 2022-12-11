@@ -8,14 +8,13 @@ import VideoList from "../../data/videos.json";
 import NextVideo from "../../components/NextVideo/NextVideo";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 
 function Home() {
 	const [clickedvideo, setclickedvideo] = useState();
 	const [videos, setvideos] = useState([]);
 	const [apikey, setapikey] = useState(null);
 	const { videoId } = useParams();
-	const [videodetails, setvideodetails] = useState();
 
 	useEffect(() => {
 		function getApiKey() {
@@ -39,8 +38,8 @@ function Home() {
 				)
 				.then((response) => {
 					setvideos(response.data);
-					setclickedvideo(response.data[0].image);
-					console.log(response.data[0].image);
+
+					console.log(response.data);
 				});
 		}
 	}, []);
@@ -49,25 +48,33 @@ function Home() {
 		axios
 			.get(
 				"https://project-2-api.herokuapp.com/videos/84e96018-4022-434e-80bf-000ce4cd12b8" +
+					// { videoId } +
 					"?api_key=" +
 					apikey
 			)
 			.then((response) => {
-				setvideodetails(response.data);
+				setclickedvideo(response.data);
+			})
+			.catch((err) => {
+				console.log(err.response);
 			});
-	}, [apikey, videoId]);
+	}, [apikey]);
 
 	return (
 		<>
 			<Navbar />
-			<Video poster={clickedvideo} />
+			<Video poster={clickedvideo} clickedvideo={clickedvideo} />
 			<div className="components__flex">
 				<div className="components__comments">
-					<Section videodetails={videodetails} />
+					<Section videodetails={clickedvideo} />
 					<CommentForm />
-					<CommentList commentList={videodetails} />
+					<CommentList commentList={clickedvideo} />
 				</div>
-				<NextVideo videos={videos} className="components__nextvideo" />
+				<NextVideo
+					videos={videos}
+					clickedvideo={clickedvideo}
+					className="components__nextvideo"
+				/>
 			</div>
 		</>
 	);

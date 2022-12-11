@@ -1,7 +1,7 @@
 import "../CommentList/CommentList.scss";
 
 function CommentList(props) {
-	// console.log(props.commentList?.comments);
+	console.log(props);
 	return props.commentList?.comments.map((comment) => {
 		return (
 			<>

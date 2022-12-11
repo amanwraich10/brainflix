@@ -2,16 +2,16 @@ function UploadVideoForm() {
 	return (
 		<>
 			<form>
-				<label>
+				<label className="uploadform__title--top">
 					TITLE YOUR VIDEO
 					<input placeholder="Add a title to your video" />
 				</label>
-				<label>
+				<label className="uploadform__title--bottom">
 					ADD A VIDEO DESCRIPTION
 					<input placeholder="Add a description to your video" />
 				</label>
-				<button>PUBLISH</button>
-				<button>CANCEL</button>
+				<button className="uploadform__button--publish">PUBLISH</button>
+				<button className="uploadform__button--cancel">CANCEL</button>
 			</form>
 		</>
 	);
