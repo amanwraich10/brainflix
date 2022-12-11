@@ -1,14 +1,16 @@
 import "../../components/Navbar/Navbar.scss";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
 	const buttonHandler = (event) => {
 		event.preventDefault();
-		console.log(event.target);
 	};
 	return (
 		<>
 			<div className="navbar">
-				<a className="navbar__logo" href=""></a>
+				<Link to="/">
+					<p className="navbar__logo"></p>
+				</Link>
 
 				<form onClick={buttonHandler} className="navabr__form">
 					<div className="navbar__search">
@@ -19,7 +21,9 @@ function Navbar() {
 						></input>
 						<div className="navbar__image" />
 					</div>
-					<button className="navbar__button">UPLOAD</button>
+					<NavLink to="upload">
+						<button className="navbar__button">UPLOAD</button>
+					</NavLink>
 				</form>
 			</div>
 		</>
