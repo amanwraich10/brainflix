@@ -23,9 +23,6 @@ function UploadVideoForm() {
 						placeholder="Add a description to your video"
 					/>
 				</div>
-
-				<button className="uploadform__button--publish">PUBLISH</button>
-				<button className="uploadform__button--cancel">CANCEL</button>
 			</form>
 		</>
 	);
