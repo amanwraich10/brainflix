@@ -10,7 +10,10 @@ function NextVideo(props) {
 			{props.videos.map((video) => {
 				return (
 					video.id !== props.clickedvideo.id && (
-						<Link to={`/video/${videoid}`}>
+						<Link
+							to={`/video/${videoid}`}
+							className="nextvideo__links"
+						>
 							<div
 								to={video.id}
 								key={video.id}

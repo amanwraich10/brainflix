@@ -2,12 +2,8 @@ import "../../components/Section/Section.scss";
 
 function Section(props) {
 	function date(timestamp) {
-		const d = new Date(timestamp);
-		return d.toLocaleDateString("en-US", {
-			day: "2-digit",
-			month: "2-digit",
-			year: "numeric",
-		});
+		let d = new Date(timestamp);
+		return d.toISOString().replaceAll("-", "/").split("T")[0];
 	}
 
 	return (

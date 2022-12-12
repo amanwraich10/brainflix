@@ -54,41 +54,54 @@
 				color: $BrainFlix-Black;
 			}
 		}
+	}
 
-		&__button--publish {
-			color: $White;
-			letter-spacing: 1px;
-			font-family: AvenirBold;
-			font-size: 1.375rem;
-			width: 90%;
-			background-color: $BrainFlix-Blue;
-			border-radius: 0.4375rem;
-			padding: 1.2rem;
-			border: 0.125rem solid $BrainFlix-Blue;
-			margin-top: 1rem;
-			margin-bottom: 1.9rem;
-			margin-left: 1.75rem;
-			background-image: url(../../assets/Icons/publish.svg);
-			background-repeat: no-repeat;
-			background-size: 6.5vw;
-			background-position-x: 3.5vw;
-			background-position-y: center;
+	@include tablet {
+		&__title--top {
+			margin-left: 3.0625rem;
 		}
 
-		&__button--cancel {
-			font-family: AvenirBold;
-			letter-spacing: 1px;
-			color: $BrainFlix-Blue;
-			font-family: AvenirBold;
-			font-size: 1.375rem;
-			width: 90%;
-			background-color: $White;
-			border-radius: 0.4375rem;
-			padding: 1.2rem;
-			border: 0.125rem solid $White;
-			margin-top: 0.45rem;
-			margin-bottom: 2.8rem;
-			margin-left: 1.75rem;
+		&__title--bottom {
+			margin-left: 3.0625rem;
+		}
+		&__input--top {
+			margin-left: 3.0625rem;
+			margin-right: 3.0625rem;
+		}
+		&__input--bottom {
+			margin-left: 3.0625rem;
+			margin-right: 3.0625rem;
+		}
+	}
+
+	@include desktop {
+		&__title--top {
+			margin-left: 0rem;
+			margin-bottom: 0px;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+
+		&__title--bottom {
+			margin-left: 0rem;
+			margin-top: 0px;
+			font-size: 15px;
+		}
+		&__input--top {
+			margin-left: 0rem;
+			width: 48.6vw;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			font-size: 15px;
+			border-radius: 0.3rem;
+		}
+		&__input--bottom {
+			margin-left: 0rem;
+			font-size: 15px;
+			padding-top: 12px;
+			padding-bottom: 62.5px;
+			font-size: 15px;
+			border-radius: 0.3rem;
 		}
 	}
 }
