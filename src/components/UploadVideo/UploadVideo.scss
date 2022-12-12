@@ -2,6 +2,10 @@
 
 .uploadpage {
 	@include mobile {
+		&__linebreak {
+			border: 0.0625rem solid $Mercury;
+			margin-top: -12px;
+		}
 		&__title {
 			font-family: AvenirBold;
 			font-size: 2.5rem;
