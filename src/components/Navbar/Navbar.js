@@ -9,7 +9,7 @@ function Navbar() {
 					<p className="navbar__logo"></p>
 				</Link>
 
-				<form onClick={buttonHandler} className="navabr__form">
+				<form className="navabr__form">
 					<div className="navbar__search">
 						<input
 							className="navbar__input"

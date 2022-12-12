@@ -5,7 +5,7 @@ import "../UploadVideo/UploadVideo.scss";
 function UploadVideo() {
 	return (
 		<>
-			<hr></hr>
+			<hr className="uploadpage__linebreak"></hr>
 			<h1 className="uploadpage__title">Upload Video</h1>
 			<h3 className="uploadpage__sub-title">VIDEO THUMBNAIL</h3>
 			<img className="uploadpage__image" src={UploadPhoto}></img>
