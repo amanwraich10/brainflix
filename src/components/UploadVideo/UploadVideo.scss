@@ -1,0 +1,84 @@
+@import "../../App.scss";
+
+.uploadpage {
+	@include mobile {
+		&__linebreak {
+			border: 0.0625rem solid $Mercury;
+			margin-top: -12px;
+		}
+		&__linebreak-desktop {
+			visibility: hidden;
+		}
+		&__title {
+			font-family: AvenirBold;
+			font-size: 2.5rem;
+			color: $BrainFlix-Black;
+			margin: 37px auto auto 1.75rem;
+		}
+
+		&__sub-title {
+			font-family: AvenirBold;
+			margin-left: 1.75rem;
+			font-size: 1.25rem;
+			color: $Silver;
+			margin: 40px auto 10px 1.75rem;
+		}
+
+		&__image {
+			width: 90%;
+			height: 35.5vh;
+			margin: auto 1.75rem 1.75rem 1.75rem;
+			border-radius: 8px;
+		}
+	}
+
+	@include tablet {
+		&__linebreak {
+			margin-top: 4px;
+		}
+		&__linebreak-desktop {
+			visibility: hidden;
+		}
+		&__title {
+			font-size: 2.7rem;
+			margin-left: 3.0625rem;
+		}
+		&__sub-title {
+			margin-left: 3.0625rem;
+		}
+
+		&__image {
+			margin-left: 3.0625rem;
+			width: 45.3vw;
+		}
+	}
+
+	@include desktop {
+		&__flex {
+			display: flex;
+		}
+		&__linebreak-desktop {
+			visibility: visible;
+			border: 0.0625rem solid $Mercury;
+			margin-left: 8.75rem;
+			margin-right: 8.75rem;
+		}
+		&__title {
+			font-size: 2.1rem;
+			margin-left: 8.75rem;
+			margin-top: 2.75rem;
+		}
+		&__sub-title {
+			font-size: 1rem;
+			margin-left: 8.75rem;
+			margin-top: 25px;
+		}
+
+		&__image {
+			margin-left: 8.75rem;
+			width: 26vw;
+			height: 200px;
+			border-radius: 0.3rem;
+		}
+	}
+}

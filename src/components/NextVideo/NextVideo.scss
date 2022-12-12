@@ -36,6 +36,11 @@
 			font-family: Avenir;
 			font-size: 1.375rem;
 		}
+
+		&__links {
+			text-decoration: none;
+			color: $BrainFlix-Black;
+		}
 	}
 
 	@include tablet {

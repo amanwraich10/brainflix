@@ -1,0 +1,107 @@
+@import "../../App.scss";
+
+.uploadform {
+	@include mobile {
+		&__top {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__bottom {
+			display: flex;
+			flex-direction: column;
+		}
+		&__title--top {
+			font-family: AvenirBold;
+			color: $Silver;
+			margin-left: 1.75rem;
+			font-size: 1.2rem;
+			letter-spacing: 0.2px;
+		}
+
+		&__title--bottom {
+			font-family: AvenirBold;
+			margin-left: 1.75rem;
+			color: $Silver;
+			font-size: 1.2rem;
+			letter-spacing: 0.2px;
+		}
+
+		&__input--top {
+			font-family: Avenir;
+			font-size: 20px;
+			padding: 19px;
+			margin: 0.5rem 1.75rem 2rem 1.75rem;
+			border-radius: 0.4375rem;
+			border: 0.1rem solid $Mercury;
+			background-color: $Alabaster;
+
+			&::placeholder {
+				color: $BrainFlix-Black;
+			}
+		}
+
+		&__input--bottom {
+			font-family: Avenir;
+			font-size: 20px;
+			padding: 22px 22px 95px 20px;
+			margin: 0.5rem 1.75rem 1.45rem 1.75rem;
+			border-radius: 0.4375rem;
+			border: 0.1rem solid $Mercury;
+			background-color: $Alabaster;
+
+			&::placeholder {
+				color: $BrainFlix-Black;
+			}
+		}
+	}
+
+	@include tablet {
+		&__title--top {
+			margin-left: 3.0625rem;
+		}
+
+		&__title--bottom {
+			margin-left: 3.0625rem;
+		}
+		&__input--top {
+			margin-left: 3.0625rem;
+			margin-right: 3.0625rem;
+		}
+		&__input--bottom {
+			margin-left: 3.0625rem;
+			margin-right: 3.0625rem;
+		}
+	}
+
+	@include desktop {
+		&__title--top {
+			margin-left: 0rem;
+			margin-bottom: 0px;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+
+		&__title--bottom {
+			margin-left: 0rem;
+			margin-top: 0px;
+			font-size: 15px;
+		}
+		&__input--top {
+			margin-left: 0rem;
+			width: 48.6vw;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			font-size: 15px;
+			border-radius: 0.3rem;
+		}
+		&__input--bottom {
+			margin-left: 0rem;
+			font-size: 15px;
+			padding-top: 12px;
+			padding-bottom: 62.5px;
+			font-size: 15px;
+			border-radius: 0.3rem;
+		}
+	}
+}
