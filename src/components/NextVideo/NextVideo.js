@@ -12,7 +12,7 @@ function NextVideo(props) {
 					video.id !== props.clickedvideo.id && (
 						<Link
 							to={`/video/${videoid}`}
-							className="nextvideo__links"
+							className="nextvideo__link"
 						>
 							<div
 								to={video.id}

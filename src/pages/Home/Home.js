@@ -45,12 +45,12 @@ function Home() {
 	}, []);
 
 	useEffect(() => {
+		console.log(apikey);
+
 		axios
 			.get(
-				"https://project-2-api.herokuapp.com/videos/84e96018-4022-434e-80bf-000ce4cd12b8" +
-					// { videoId } +
-					"?api_key=" +
-					apikey
+				`https://project-2-api.herokuapp.com/videos/84e96018-4022-434e-80bf-000ce4cd12b8?api_key=
+					${apikey}`
 			)
 			.then((response) => {
 				setclickedvideo(response.data);
@@ -67,11 +67,12 @@ function Home() {
 			<div className="components__flex">
 				<div className="components__comments">
 					<Section videodetails={clickedvideo} />
-					<CommentForm />
+					<CommentForm comments={clickedvideo} />
 					<CommentList commentList={clickedvideo} />
 				</div>
 				<NextVideo
 					videos={videos}
+					video123={videoId}
 					clickedvideo={clickedvideo}
 					className="components__nextvideo"
 				/>
