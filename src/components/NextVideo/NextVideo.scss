@@ -2,6 +2,9 @@
 
 .nextvideo {
 	@include mobile {
+		&__link {
+			text-decoration: none;
+		}
 		&__heading {
 			color: $Silver;
 			margin-left: 1.75rem;
@@ -25,6 +28,7 @@
 			margin-bottom: 0.625rem;
 			margin-top: 0rem;
 			width: 90%;
+			color: $BrainFlix-Black;
 		}
 
 		&__section {
@@ -35,10 +39,6 @@
 			margin-top: 0rem;
 			font-family: Avenir;
 			font-size: 1.375rem;
-		}
-
-		&__links {
-			text-decoration: none;
 			color: $BrainFlix-Black;
 		}
 	}
