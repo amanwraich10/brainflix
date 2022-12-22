@@ -2,16 +2,14 @@ import "../NextVideo/NextVideo.scss";
 import { Link } from "react-router-dom";
 
 function NextVideo(props) {
-	const { videoid } = props;
-
 	return (
 		<div>
 			<p className="nextvideo__heading">NEXT VIDEOS</p>
 			{props.videos.map((video) => {
 				return (
-					video.id !== props.clickedvideo.id && (
+					video.id !== props.clickedvideo?.id && (
 						<Link
-							to={`/video/${videoid}`}
+							to={`/videos/${video.id}`}
 							className="nextvideo__links"
 						>
 							<div
