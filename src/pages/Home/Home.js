@@ -14,7 +14,7 @@ function Home() {
 	const [clickedvideo, setclickedvideo] = useState();
 	const [videos, setvideos] = useState([]);
 	const [apikey, setapikey] = useState(null);
-	const { videoId } = useParams();
+	let { videoId } = useParams();
 
 	useEffect(() => {
 		function getApiKey() {
@@ -22,7 +22,6 @@ function Home() {
 				.get("https://project-2-api.herokuapp.com/register")
 				.then((response) => {
 					setapikey(response.data.api_key);
-
 					return Promise.resolve(response.data.api_key);
 				});
 		}
@@ -38,27 +37,34 @@ function Home() {
 				)
 				.then((response) => {
 					setvideos(response.data);
-
-					console.log(response.data);
 				});
 		}
 	}, []);
 
 	useEffect(() => {
-		console.log(apikey);
+		if (apikey) {
+			axios
+				.get(
+					`https://project-2-api.herokuapp.com/videos/84e96018-4022-434e-80bf-000ce4cd12b8?api_key=${apikey}`
+				)
+				.then((res) => setclickedvideo(res.data));
+		}
+	}, [apikey]);
 
+	useEffect(() => {
 		axios
 			.get(
-				`https://project-2-api.herokuapp.com/videos/84e96018-4022-434e-80bf-000ce4cd12b8?api_key=
-					${apikey}`
+				"https://project-2-api.herokuapp.com/videos/" +
+					videoId +
+					"?api_key=" +
+					apikey
 			)
 			.then((response) => {
 				setclickedvideo(response.data);
-			})
-			.catch((err) => {
-				console.log(err.response);
+				console.log(response);
 			});
-	}, [apikey]);
+		window.scrollTo(0, 0);
+	}, [apikey, videoId]);
 
 	return (
 		<>
@@ -66,9 +72,9 @@ function Home() {
 			<Video poster={clickedvideo} clickedvideo={clickedvideo} />
 			<div className="components__flex">
 				<div className="components__comments">
-					<Section videodetails={clickedvideo} />
-					<CommentForm comments={clickedvideo} />
-					<CommentList commentList={clickedvideo} />
+					<Section videodetails={clickedvideo} videos={videos} />
+					<CommentForm clickedvideo={clickedvideo} />
+					<CommentList clickedvideo={clickedvideo} />
 				</div>
 				<NextVideo
 					videos={videos}

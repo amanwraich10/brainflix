@@ -4,8 +4,7 @@ function Comments(props) {
 	return (
 		<div>
 			<h2 className="Comments__total">
-				{" "}
-				{props.comments?.comments.length} Comments
+				{props.clickedvideo?.comments.length} Comments
 			</h2>
 			<h3 className="Comments__heading">JOIN THE CONVERSATION</h3>
 			<div className="Comments__comment">

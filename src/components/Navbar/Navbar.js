@@ -18,9 +18,9 @@ function Navbar() {
 						></input>
 						<div className="navbar__image" />
 					</div>
-					<NavLink to="upload">
+					<Link to="upload">
 						<button className="navbar__button">UPLOAD</button>
-					</NavLink>
+					</Link>
 				</form>
 			</div>
 		</>
