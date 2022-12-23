@@ -1,11 +1,6 @@
 import "../../components/Section/Section.scss";
 
 function Section(props) {
-	function date(timestamp) {
-		let d = new Date(timestamp);
-		return d.toISOString().replaceAll("-", "/").split("T")[0];
-	}
-
 	return (
 		<div>
 			<h2 className="section__heading">{props.videodetails?.title}</h2>
@@ -14,8 +9,7 @@ function Section(props) {
 			<div className="section__info">
 				<div className="section__info--top">
 					<p className="section__channel">
-						By
-						{props.videodetails?.channel}
+						By {props.videodetails?.channel}
 					</p>
 
 					<p className="section__date">
