@@ -2,7 +2,7 @@
 
 .nextvideo {
 	@include mobile {
-		&__link {
+		&__links {
 			text-decoration: none;
 		}
 		&__heading {

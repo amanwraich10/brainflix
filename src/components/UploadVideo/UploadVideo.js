@@ -1,5 +1,5 @@
 import UploadVideoForm from "../UploadVideoForm/UploadVideoForm";
-import UploadPhoto from "../../assets/Images/Upload-video-preview.jpg";
+import UploadPhoto from "../../assets/Images/Upload-video-preview 2.jpg";
 import UploadVideoButtons from "../UploadVideoButtons/UploadVideoButtons";
 import "../UploadVideo/UploadVideo.scss";
 
