@@ -1,6 +1,5 @@
 import UploadVideoForm from "../UploadVideoForm/UploadVideoForm";
 import UploadPhoto from "../../assets/Images/Upload-video-preview 2.jpg";
-import UploadVideoButtons from "../UploadVideoButtons/UploadVideoButtons";
 import "../UploadVideo/UploadVideo.scss";
 
 function UploadVideo() {
@@ -14,10 +13,8 @@ function UploadVideo() {
 					<h3 className="uploadpage__sub-title">VIDEO THUMBNAIL</h3>
 					<img className="uploadpage__image" src={UploadPhoto}></img>
 				</div>
-
 				<UploadVideoForm />
 			</div>
-			<UploadVideoButtons />
 		</>
 	);
 }
